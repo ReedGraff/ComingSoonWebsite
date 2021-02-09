@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>WFS Entreprenuership Club | COMING SOON</title>
+      <meta
+          name="description" 
+          content="I am legally not obligated to tell you the description of my website"
+      />
+      <meta charset="UTF-8">
+      <meta name="robots" content="index,follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="Coming.Soon.Stylesheet.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title">
+      <img class="logo" src="img/Logo.png">
+      <header>WFS Entreprenuership Club</header>
+      <u1>COMING SOON</u1>
+      <hr><p id="launch"></p>
+    </div>
+  </body>
+  <script>
+    var countDownDate = new Date("Sep 1, 2021 00:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("launch").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("launch").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+</html>

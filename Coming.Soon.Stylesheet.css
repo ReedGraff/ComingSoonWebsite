@@ -1,0 +1,66 @@
+.logo {
+    width: 150px;
+    height: 150px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(40deg) brightness(100%) contrast(101%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/Background.png );
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    width: 75%;
+    margin: 0px auto;
+    border: 2px solid #FFF;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#launch {
+    font: 40px;
+    word-spacing: 20px;
+}
+
+@media (orientation: portrait) {
+    .logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    hr {
+        border: 1px solid #FFF;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    #launch {
+        font: 20px;
+    }
+}
